@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <h1 id="demo">Welcome to JS tutorials</h1>
+    <h2>JavaScript Validation</h2>
+
+    <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+      Name: <input type="text" name="fname">
+      <input type="submit" value="Submit">
+    </form>
+    <h2 id="heading">Welcome to JavaScript Tutorial!</h2>
+    <button type="button" onclick = "document.getElementById('heading').style.color = 'green'">click me!</button>
+    
+    <h2>creating visible and hidden tutorial</h2>
+    <ol id="fruit">
+        <h3>Fruits:</h3>
+        <li>Mango</li>
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Grape</li>
+    </ol>
+    <input type="button" value="hidden fruits" onclick="document.getElementById('fruit').style.visibility='hidden'">
+    <input type="button" value="show fruits" onclick="document.getElementById('fruit').style.visibility='visible'">
+    <ol id="veggies">
+        <h3>vegetables</h3>
+        <li>Potato</li>
+        <li>Tomato</li>
+        <li>Onion</li>
+        <li>Carrot</li>
+    </ol>
+    <input type="button" value="hidden fruits" onclick="document.getElementById('veggies').style.visibility='hidden'">
+    <input type="button" value="show fruits" onclick="document.getElementById('veggies').style.visibility='visible'">
+
+    <p>Click the button to display the date.</p>
+    <p id="demo1"></p>
+    <button id="myBtn" onclick="displayDate()">The time is?</button><br>
+
+    <script>
+        document.getElementById("myBtn").onclick = displayDate;
+        function displayDate(){
+        document.getElementById("demo1").innerHTML = Date();
+        };
+
+        document.getElementById("btn1").addEventListener("click", myFunction);
+        function myFunction(){
+            alert("Hello World");
+        }
+
+        
+        document.write(date());
+    </script>
+
+    <button id="btn1">Try it</button>
+
+    <h2>JavaScript Validation</h2>
+
+<form action="/action_page.php" method="post">
+    <input type="text" name="fname" required>
+    <input type="submit" value="Submit">
+</form>
+
+    <p>If you click submit, without filling out the text field,
+        your browser will display an error message.</p>     
+
+
+
+    
+
+    
+ <script src="practice4.js"></script>   
+</body>
+</html>
